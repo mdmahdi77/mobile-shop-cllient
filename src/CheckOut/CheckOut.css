@@ -1,0 +1,8 @@
+.checkOut{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.checkOut h3{color: black}
+.checkOut h5{color: gray}
+.checkOut h4{color: crimson}
