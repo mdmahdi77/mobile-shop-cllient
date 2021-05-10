@@ -16,7 +16,7 @@ const Admin = () => {
             img: imageUrl
           }
         console.log(data)
-        const uri = `http://localhost:6066/addEvents`
+        const uri = `https://serene-ocean-28542.herokuapp.com/addEvents`
         fetch(uri, {
             method: 'POST',
             headers: {

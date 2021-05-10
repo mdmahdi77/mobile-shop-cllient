@@ -3,7 +3,7 @@ import fakeData from '../fakeData/MOCK_DATA.json'
 
 const Invent = () => {
     const handleProduct = () => {
-        fetch('http://localhost:6066/addProducts', {
+        fetch('https://serene-ocean-28542.herokuapp.com/addProducts', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(fakeData)

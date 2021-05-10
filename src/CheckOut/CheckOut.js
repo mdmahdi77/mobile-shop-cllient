@@ -9,7 +9,7 @@ const CheckOut = () => {
     const [product, setProduct] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:6066/products')
+        fetch('https://serene-ocean-28542.herokuapp.com/products')
         .then(res => res.json())
         .then(data => setProduct(data))
     },[])
@@ -26,7 +26,7 @@ const CheckOut = () => {
     const handleOrder = id => {
         const newOrder = {...productOrder, ...selectedDate, ...loggedInUser}
 
-        fetch('http://localhost:6066/addOrders', {
+        fetch('https://serene-ocean-28542.herokuapp.com/addOrders', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newOrder)
